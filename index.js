@@ -5,6 +5,9 @@ import {
   isValidDay,
   isValidMonth,
 } from "./utils/index.js";
+import express from "express";
+
+const app = express();
 
 const token = "8096663847:AAFIuq5NhO4PR6AK5h0WN6ZLMVZx_L3LxoM";
 const bot = new TelegramBot(token, { polling: true });
