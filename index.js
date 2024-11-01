@@ -9,7 +9,6 @@ import {
 const token = "8096663847:AAFIuq5NhO4PR6AK5h0WN6ZLMVZx_L3LxoM";
 const bot = new TelegramBot(token, { polling: true });
 
-
 const botDescription = `
 Welcome to the **Telegram Workout Bot**! This bot helps you access personalized workout plans based on the month and day of your choice.
 
@@ -89,5 +88,8 @@ bot.on("polling_error", (error) => {
   console.error(`Polling error: ${error.code} - ${error.message}`);
 });
 
-
-console.log("Bot is running...");
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log("Bot is running...");
+  console.log(`Server is running on port ${PORT}`);
+});
