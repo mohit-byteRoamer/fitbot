@@ -1,6 +1,5 @@
 import TelegramBot from "node-telegram-bot-api";
 import express from "express";
-import setupBotRoutes from "./route/bot_route.js";
 import { botDescription } from "./assets/index.js";
 import { formatWorkoutMessage, isValidDay, isValidMonth } from "./utils/index.js";
 
